@@ -1,0 +1,159 @@
+@font-face {
+	font-family: 'work_sansitalic';
+	src: url('fonts/worksans-italic-variablefont_wght-webfont.woff2') format('woff2'),
+		url('fonts/worksans-italic-variablefont_wght-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #d6d6d6;
+	font-family: 'work-sansitalic', sans-serif;
+}
+
+.root {
+	margin: 20px auto;
+	width: 65vw;
+	min-height: 90vh;
+	background-color: white;
+	border: 2px solid #d6d6d6;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.to-do-header {
+	overflow: hidden;
+	height: 160px;
+}
+
+.to-do-header img {
+	height: 100%;
+	max-width: 100%;
+	object-fit: cover;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+}
+
+.to-do-header .current-date {
+	margin: 0;
+	padding: 0 5%;
+	position: absolute;
+	top: 140px;
+	font-size: 1.7em;
+	color: white;
+}
+
+.header-hr {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	margin-top: -5px;
+	height: 2px;
+	background-color: grey;
+}
+
+/* Styles for #add-a-to-do */
+
+.add-a-to-do {
+	padding: 5px 5%;
+	height: 31px;
+}
+
+.add-a-to-do img {
+	display: inline-block;
+	opacity: 0.7;
+}
+
+.add-a-to-do img:hover {
+	cursor: pointer;
+}
+
+.add-a-to-do input {
+	display: inline-block;
+	position: absolute;
+	width: 49vw;
+	height: 18px;
+	margin: 8px auto;
+	padding: 0 10px 0 15px;
+	border: none;
+	font-family: inherit;
+	font-style: italic;
+}
+
+.add-hr {
+	height: 2px;
+	background-color: grey;
+	border: none;
+	margin: 0;
+}
+
+/* Styles for to-do list */
+
+.to-do-body {
+	padding: 5px 5%;
+}
+
+.to-do-list li {
+	list-style: none;
+	margin-bottom: 15px;
+}
+
+.to-do-list li > p {
+	display: inline-block;
+	width: 43vw;
+	margin: 0;
+	overflow-wrap: break-word;
+}
+
+#status-icon {
+	display: inline-block;
+	position: absolute;
+	margin-left: -30px;
+	margin-right: 15px;
+}
+
+#status-icon {
+	position: absolute;
+}
+
+#status-icon:hover {
+	cursor: pointer;
+}
+
+.to-do-list .done {
+	text-decoration: line-through;
+	color: grey;
+}
+
+.to-do-list li .bin {
+	display: inline-block;
+	float: right;
+	margin-left: 10px;
+}
+
+.to-do-list li .bin:hover {
+	cursor: pointer;
+}
+
+
+@media(min-width: 1024px) {
+	.to-do-header .current-date {
+		padding: 0 12%;
+	}
+
+	.add-a-to-do {
+		padding: 5px 12%;
+	}
+
+	.to-do-body {
+		padding: 5px 12%;
+	}
+}
